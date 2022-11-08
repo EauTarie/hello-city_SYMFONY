@@ -1,13 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Hello City{% endblock %}
+
 {% block body %}
+    <img src="{{ asset('/img/telechargement.jpg') }}" alt="Salut Axel">
     <h1> Hello from Quebec</h1>
 
     <p>It's currently {{ 'now' |date('h:i A') }}.</p>
 
-    <footer>
-        <p>&copy; Copyright {{ 'now' |date('Y')}} 
-        &middot; <a href="#">About us</a></p>
-    </footer>
 
 {% endblock %}

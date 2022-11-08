@@ -8,8 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PagesController extends AbstractController
 {
+    /* Configuration de la page home */
     /**
-     * @Route("/", name="app_home")
+     * * @Route("/", name="app_home")
      */
     public function home(): Response
     {
@@ -17,4 +18,15 @@ class PagesController extends AbstractController
 
         return $this->render('pages/home.html.twig');
     }
+
+    /* Configuration de la page About */
+    /**
+     * * @Route("/about-us", name="app_about")
+     */
+    
+    public function about(): Response
+    {
+        return $this->render('pages/about.html.twig');
+    }
 }
+

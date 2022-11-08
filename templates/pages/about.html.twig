@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+    {% block title 'About Us | ' ~ parent() %}
+        <script src="https://cdn.tailwindcss.com"></script>
+{# Début commentaire
+
+    L'autre appellation en utilisant la quotation normale :
+    {% block title %} bonjour Us | {{ parent() }} {% endblock %}
+    
+    Fin du commentaire #}
+
+{% block body %}
+    <img src="{{ asset('/img/CEtNcvqVEAAOJoB.jpg') }}" alt="Salut Axel">
+    <h1> Built with 	&hearts; by <span>Les teachers du net</span></h1>
+    <a href="{{ path('app_home') }}">Revenir à la page d'accueil</a>
+{% endblock %}
+
+ {# !IMPOTANT! A continuer à partir d'ici (timestamp Youtube 28minutes 14sec Lien : https://www.youtube.com/watch?v=yCPiX7_fy30&t=7s) #}
