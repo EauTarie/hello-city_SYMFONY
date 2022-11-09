@@ -1,1 +1,1 @@
-web: heroku-php-nginx public/
+web: heroku-php-nginx public/ -C public/nginx_app.conf
